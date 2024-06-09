@@ -82,7 +82,7 @@ const Header = () => {
             >
               <MenuOutlined
                 className={`text-2xl rounded-md py-1 px-1 ${
-                  mobileMenu ? "bg-custom-yellow text-white" : 'bg-white text-black'
+                  mobileMenu ? "bg-custom-yellow" : 'bg-white text-black'
                 }`}
               /> 
             </button>
@@ -91,7 +91,7 @@ const Header = () => {
         {
           //mobile drop down
         }
-        <div className={`sticky mt-[15px] bg-white w-full lg:hidden ${mobileMenu ? 'block' : 'hidden'}`}>
+        <div className={`sticky mt-[15px] bg-custom-yellow rounded-md w-full lg:hidden ${mobileMenu ? 'block' : 'hidden'}`}>
           <ul className='text-center font-mono'>
             <li>
             Home
