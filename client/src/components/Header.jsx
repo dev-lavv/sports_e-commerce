@@ -75,12 +75,7 @@ const Header = () => {
         }
         <div className="lg:hidden sticky w-full flex justify-between items-center mt-2">
           <div>
-            {
-              //logo
-            }
-          </div>
-          <div>
-            <button
+          <button
               onClick={handleMobileMenu}
             className=''
             >
@@ -90,6 +85,16 @@ const Header = () => {
                 }`}
               /> 
             </button>
+          </div>
+          <div>
+            {
+              //mobile logo
+            }
+          </div>
+          <div className='flex gap-2'>
+            <SearchOutlined className='text-xl'/>
+            <ShoppingCartOutlined className='text-xl'/>
+            <UserOutlined className='text-xl'/>
           </div>
         </div>
         {
@@ -111,12 +116,6 @@ const Header = () => {
             </li>
             <li>
               Accessories
-            </li>
-            <li>
-              Cart
-            </li>
-            <li>
-              Login
             </li>
           </ul>
         </div>
