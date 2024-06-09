@@ -71,10 +71,14 @@ const Header = () => {
           </ul>
         </div>
         {
-          //mobile
+          //mobile header
         }
-        <div className="lg:hidden flex justify-between items-center mt-2">
-          <div></div>
+        <div className="lg:hidden sticky w-full flex justify-between items-center mt-2">
+          <div>
+            {
+              //logo
+            }
+          </div>
           <div>
             <button
               onClick={handleMobileMenu}
