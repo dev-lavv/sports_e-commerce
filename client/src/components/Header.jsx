@@ -2,24 +2,35 @@ import {
   ShoppingCartOutlined,
   UserOutlined,
   SearchOutlined,
+  MenuOutlined,
 } from "@ant-design/icons";
+import { useState } from "react";
 const Header = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const handleMobileMenu = () => {
+    if (mobileMenu === true) {
+      setMobileMenu(false);
+    } else {
+      setMobileMenu(true);
+    }
+  };
+
   return (
     <>
-      <nav className="w-5/6 h-[50px] ">
-        <div className="flex justify-between items-center h-[50px]">
+      <nav className="w-5/6 h-[50px]">
+        <div className="lg:flex hidden justify-between items-center h-[50px]">
           <div>
             {
               //logo
             }
           </div>
-          <div className="flex justify-between items-center border-2 border-black rounded-l-xl rounded-r-xl">
+          <div className="lg:flex hidden justify-between items-center border-2 border-black rounded-l-xl rounded-r-xl">
             <input className="mx-1 border-1 border-white" />
             <button>
               <SearchOutlined className="text-[24px] bg-custom-yellow rounded-r-xl py-1 px-1" />
             </button>
           </div>
-          <ul className="flex gap-5 font-mono items-center">
+          <ul className="lg:flex hidden gap-5 font-mono items-center">
             <li className="text-[18px] border-b-2 border-custom-yellow">
               <button className="hover:border-b-2 hover:border-custom-yellow">
                 Home
@@ -56,6 +67,52 @@ const Header = () => {
                 <UserOutlined className="" />
                 <span className="text-[18px]">Login</span>
               </button>
+            </li>
+          </ul>
+        </div>
+        {
+          //mobile
+        }
+        <div className="lg:hidden flex justify-between items-center mt-2">
+          <div></div>
+          <div>
+            <button
+              onClick={handleMobileMenu}
+            className=''
+            >
+              <MenuOutlined
+                className={`text-2xl rounded-md py-1 px-1 ${
+                  mobileMenu ? "bg-custom-yellow text-white" : 'bg-white text-black'
+                }`}
+              /> 
+            </button>
+          </div>
+        </div>
+        {
+          //mobile drop down
+        }
+        <div className={`sticky mt-[15px] bg-white w-full lg:hidden ${mobileMenu ? 'block' : 'hidden'}`}>
+          <ul className='text-center font-mono'>
+            <li>
+            Home
+            </li>
+            <li>
+              Bats
+            </li>
+            <li>
+              Balls
+            </li>
+            <li>
+              Clothing
+            </li>
+            <li>
+              Accessories
+            </li>
+            <li>
+              Cart
+            </li>
+            <li>
+              Login
             </li>
           </ul>
         </div>
