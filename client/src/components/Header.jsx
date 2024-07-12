@@ -5,7 +5,8 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 import { useState } from "react";
-const Header = () => {
+
+const Header = (props) => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const handleMobileMenu = () => {
     if (mobileMenu === true) {
@@ -20,36 +21,36 @@ const Header = () => {
       <nav className="w-5/6 h-[50px]">
         <div className="lg:flex hidden justify-between items-center h-[50px]">
           <div>
-            <h1 className="text-2xl text-custom-yellow">Sports eCom</h1>
+            <h1 className="text-[24px] text-custom-yellow">Sports eCom</h1>
           </div>
           <div className="lg:flex hidden justify-between items-center border-2 border-black rounded-l-xl rounded-r-xl">
-            <input className="mx-1 border-1 border-white" />
+            <input className="mx-1 outline-none" />
             <button>
               <SearchOutlined className="text-[24px] bg-custom-yellow rounded-r-xl py-1 px-1" />
             </button>
           </div>
           <ul className="lg:flex hidden gap-5 font-mono items-center">
-            <li className="text-[18px] border-b-2 border-custom-yellow">
+            <li className={`text-[18px] ${props.home}`}>
               <button className="hover:border-b-2 hover:border-custom-yellow">
                 Home
               </button>
             </li>
-            <li className=" text-[18px]">
-              <button className="hover:border-b-2 hover:border-custom-yellow">
+            <li className={`text-[18px] ${props.bats}`}>
+              <button className={`hover:border-b-2 hover:border-custom-yellow`}>
                 Bats
               </button>
             </li>
-            <li className="text-[18px]">
+            <li className={`text-[18px] ${props.balls}`}>
               <button className="hover:border-b-2 hover:border-custom-yellow">
                 Balls
               </button>
             </li>
-            <li className="text-[18px]">
+            <li className={`text-[18px] ${props.clothing}`}>
               <button className="hover:border-b-2 hover:border-custom-yellow">
                 Clothing
               </button>
             </li>
-            <li className="text-[18px]">
+            <li className={`text-[18px] ${props.accessories}`}>
               <button className="hover:border-b-2 hover:border-custom-yellow">
                 Accessories
               </button>
