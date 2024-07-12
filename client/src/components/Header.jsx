@@ -20,9 +20,7 @@ const Header = () => {
       <nav className="w-5/6 h-[50px]">
         <div className="lg:flex hidden justify-between items-center h-[50px]">
           <div>
-            {
-              //logo
-            }
+            <h1 className="text-2xl text-custom-yellow">Sports eCom</h1>
           </div>
           <div className="lg:flex hidden justify-between items-center border-2 border-black rounded-l-xl rounded-r-xl">
             <input className="mx-1 border-1 border-white" />
@@ -75,15 +73,12 @@ const Header = () => {
         }
         <div className="lg:hidden sticky w-full flex justify-between items-center mt-2">
           <div>
-          <button
-              onClick={handleMobileMenu}
-            className=''
-            >
+            <button onClick={handleMobileMenu} className="">
               <MenuOutlined
                 className={`text-2xl rounded-md py-1 px-1 ${
-                  mobileMenu ? "bg-custom-yellow" : 'bg-white text-black'
+                  mobileMenu ? "bg-custom-yellow" : "bg-white text-black"
                 }`}
-              /> 
+              />
             </button>
           </div>
           <div>
@@ -91,32 +86,26 @@ const Header = () => {
               //mobile logo
             }
           </div>
-          <div className='flex gap-2'>
-            <SearchOutlined className='text-xl'/>
-            <ShoppingCartOutlined className='text-xl'/>
-            <UserOutlined className='text-xl'/>
+          <div className="flex gap-2">
+            <SearchOutlined className="text-xl" />
+            <ShoppingCartOutlined className="text-xl" />
+            <UserOutlined className="text-xl" />
           </div>
         </div>
         {
           //mobile drop down
         }
-        <div className={`sticky mt-[15px] bg-custom-yellow rounded-md w-full lg:hidden ${mobileMenu ? 'block' : 'hidden'}`}>
-          <ul className='text-center font-mono'>
-            <li>
-            Home
-            </li>
-            <li>
-              Bats
-            </li>
-            <li>
-              Balls
-            </li>
-            <li>
-              Clothing
-            </li>
-            <li>
-              Accessories
-            </li>
+        <div
+          className={`sticky mt-[15px] bg-custom-yellow rounded-md w-full lg:hidden ${
+            mobileMenu ? "block" : "hidden"
+          }`}
+        >
+          <ul className="text-center font-mono">
+            <li>Home</li>
+            <li>Bats</li>
+            <li>Balls</li>
+            <li>Clothing</li>
+            <li>Accessories</li>
           </ul>
         </div>
       </nav>
