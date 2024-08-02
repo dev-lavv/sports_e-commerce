@@ -55,12 +55,19 @@ const Home = () => {
           alt="Cricket-Images"
         ></img>
         {
-          //dynamic heading 
+          //dynamic heading
         }
         <a href="#" className="">
-        <h1 className="text-[96px] absolute top-1/4 left-[10%] text-custom-yellow hover:underline">
-          Cricket Bats
-        </h1>
+          <h1
+            className="text-[96px] text-custom-yellow hover:underline"
+            style={{
+              position: "absolute",
+              bottom: `${"2rem"}`,
+              left: `${"30%"}`,
+            }}
+          >
+            Cricket Bats
+          </h1>
         </a>
         <div className="absolute top-1/2">
           <button
@@ -79,9 +86,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className='w-full h-screen'>
-
-      </div>
+      <div className="w-full h-screen"></div>
 
       <Footer />
     </>
