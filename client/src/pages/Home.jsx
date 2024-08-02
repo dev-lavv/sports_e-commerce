@@ -1,12 +1,9 @@
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Home = () => {
-  
-  
-
   const imgOne =
     "https://dkpcricketonline.com/cdn/shop/files/DKP_Range_Sqaure_1_3024x.jpg?v=1706124419";
   const imgTwo =
@@ -19,8 +16,8 @@ const Home = () => {
       setFirstImg(imgTwo);
     } else if (firstImgState === imgTwo) {
       setFirstImg(imgOne);
-    }else{
-        setFirstImg(imgThree);
+    } else {
+      setFirstImg(imgThree);
     }
   };
   const handleFirstRight = () => {
@@ -28,25 +25,24 @@ const Home = () => {
       setFirstImg(imgTwo);
     } else if (firstImgState === imgTwo) {
       setFirstImg(imgThree);
-    }else{
-        setFirstImg(imgOne);
+    } else {
+      setFirstImg(imgOne);
     }
   };
-  useEffect(()=>{
-    let timer1 = setTimeout(()=> {
-      if(firstImgState === imgOne){
+  useEffect(() => {
+    let timer1 = setTimeout(() => {
+      if (firstImgState === imgOne) {
         setFirstImg(imgTwo);
-      }else if(firstImgState === imgTwo){
+      } else if (firstImgState === imgTwo) {
         setFirstImg(imgThree);
-      }else if(firstImgState === imgThree){
+      } else if (firstImgState === imgThree) {
         setFirstImg(imgOne);
       }
-    },3000)
-    return () =>{
+    }, 3000);
+    return () => {
       clearTimeout(timer1);
-    }
-
-  },[firstImgState]);
+    };
+  }, [firstImgState]);
   return (
     <>
       <div className="fixed w-full lg:h-[50px] h-[45px] flex justify-center border-b-2 border-custom-yellow bg-white ">
@@ -58,7 +54,14 @@ const Home = () => {
           className="w-full object-hidden "
           alt="Cricket-Images"
         ></img>
-        <h1 className='text-[96px] absolute top-[50%] right-[50%] text-custom-yellow'>Cricket Sports</h1>
+        {
+          //dynamic heading 
+        }
+        <a href="#" className="">
+        <h1 className="text-[96px] absolute top-[50%] right-[50%] text-custom-yellow hover:underline">
+          Cricket Sports
+        </h1>
+        </a>
         <div className="absolute top-1/2">
           <button
             className="z-50 w-8 h-8 rounded-lg hover:bg-custom-yellow text-white"
