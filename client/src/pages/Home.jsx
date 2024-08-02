@@ -4,13 +4,14 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useState, useEffect } from "react";
 
 const Home = () => {
+  const [firstImgState, setFirstImg] = useState(imgOne);
   const imgOne =
     "https://dkpcricketonline.com/cdn/shop/files/DKP_Range_Sqaure_1_3024x.jpg?v=1706124419";
   const imgTwo =
     "https://dkpcricketonline.com/cdn/shop/files/thumbnail_IMG_0046_1296x.jpg?v=1694374322";
   const imgThree =
     "https://www.gray-nicolls.co.uk/cdn/shop/files/GettyImages-1964812307.jpg?v=1720794694&width=1800";
-  const [firstImgState, setFirstImg] = useState(imgOne);
+  
   const handleFirstLeft = () => {
     if (firstImgState === imgThree) {
       setFirstImg(imgTwo);
