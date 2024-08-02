@@ -58,8 +58,8 @@ const Home = () => {
           //dynamic heading 
         }
         <a href="#" className="">
-        <h1 className="text-[96px] absolute top-[50%] right-[50%] text-custom-yellow hover:underline">
-          Cricket Sports
+        <h1 className="text-[96px] absolute top-1/4 left-[10%] text-custom-yellow hover:underline">
+          Cricket Bats
         </h1>
         </a>
         <div className="absolute top-1/2">
@@ -78,6 +78,9 @@ const Home = () => {
             <RightOutlined />
           </button>
         </div>
+      </div>
+      <div className='w-full h-screen'>
+
       </div>
 
       <Footer />
