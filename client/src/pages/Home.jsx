@@ -59,8 +59,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="fixed w-full lg:h-[50px] h-[45px] flex justify-center border-b-2 border-custom-yellow bg-white ">
-        <Header home="border-b-2 border-custom-yellow" />
+      <div className="fixed lg:w-full w-screen lg:h-[50px] h-[45px] flex justify-center border-b-2 border-custom-yellow bg-white z-50">
+        <Header home="border-b-2 border-custom-yellow " />
       </div>
       <div className="w-full h-screen overflow-hidden">
         <img
@@ -73,7 +73,7 @@ const Home = () => {
         }
         <a href="#" className="">
           <h1
-            className="text-[96px] text-custom-yellow hover:underline"
+            className="lg:text-[96px] text-custom-yellow hover:underline z-1"
             style={{
               position: "absolute",
               bottom: `${"2rem"}`,
