@@ -73,7 +73,7 @@ const Home = () => {
         }
         <a href="#" className="">
           <h1
-            className="lg:text-[96px] text-custom-yellow hover:underline z-1"
+            className="lg:text-[96px] text-custom-yellow bg-custom-gray rounded-full px-2 py-2 hover:bg-custom-yellow hover:text-white z-1"
             style={{
               position: "absolute",
               bottom: `${"2rem"}`,
