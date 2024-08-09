@@ -100,7 +100,31 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="w-full h-screen"></div>
+      {
+        //section - 2
+      }
+      <div className="w-full h-screen border border-black flex justify-center">
+        <div className="w-5/6 border border-black mt-10">
+          {
+            //card - 1
+          }
+          <div className="w-1/4 h-3/4 border border-black flex flex-col gap-1">
+            <h2 className="text-[48px] font-mono font-semibold text-custom-yellow">
+              Search
+            </h2>
+            <h2 className="text-[48px] font-mono font-semibold text-custom-yellow">
+              By
+            </h2>
+            <h2 className="text-[48px] font-mono font-semibold text-custom-yellow">
+              Category
+            </h2>
+            <div></div>
+          </div>
+        </div>
+        {
+          // card - 2
+        }
+      </div>
       <Footer />
     </>
   );
