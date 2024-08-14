@@ -127,7 +127,7 @@ const Home = () => {
               </button>
             </div>
             {
-              //card 2
+              //card 2 (horizontal scroll)
             }
           </div>
           <div className="w-3/4 overflow-x-scroll">
