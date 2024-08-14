@@ -103,12 +103,12 @@ const Home = () => {
       {
         //section - 2
       }
-      <div className="w-full h-screen border border-black flex justify-center">
-        <div className="w-5/6 h-3/4 border border-black mt-10 flex">
+      <div className="w-full h-auto  flex justify-center">
+        <div className="w-5/6 h-3/4  my-10 flex">
           {
             //card - 1
           }
-          <div className="w-1/4 h-3/4 border border-black flex flex-col gap-1">
+          <div className="w-1/4 h-3/4  flex flex-col gap-1">
             <h2 className="text-[48px] font-mono font-semibold text-custom-yellow">
               Search
             </h2>
@@ -131,12 +131,12 @@ const Home = () => {
             }
           </div>
           <div className="w-3/4 overflow-x-scroll">
-          <div className="border border-black flex flex-nowrap gap-1">
-          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
-          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
-          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
-          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
-          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
+          <div className=" flex flex-nowrap">
+          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
+          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
+          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
+          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
+          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
           </div>
           </div>
         </div>
