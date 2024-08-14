@@ -104,7 +104,7 @@ const Home = () => {
         //section - 2
       }
       <div className="w-full h-screen border border-black flex justify-center">
-        <div className="w-5/6 border border-black mt-10">
+        <div className="w-5/6 h-3/4 border border-black mt-10 flex">
           {
             //card - 1
           }
@@ -118,12 +118,28 @@ const Home = () => {
             <h2 className="text-[48px] font-mono font-semibold text-custom-yellow">
               Category
             </h2>
-            <div></div>
+            <div className="flex flex-row gap-2 mx-1">
+              <button className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2">
+                <LeftOutlined />
+              </button>
+              <button className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2">
+                <RightOutlined />
+              </button>
+            </div>
+            {
+              //card 2
+            }
+          </div>
+          <div className="w-3/4 overflow-x-scroll">
+          <div className="border border-black flex flex-nowrap gap-1">
+          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
+          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
+          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
+          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
+          <div className="w-[500px] h-[366px] bg-custom-yellow inline-block mx-1"></div>
+          </div>
           </div>
         </div>
-        {
-          // card - 2
-        }
       </div>
       <Footer />
     </>
