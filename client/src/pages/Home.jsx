@@ -1,7 +1,7 @@
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 const Home = () => {
   //variables
   const imgOne =
@@ -57,6 +57,13 @@ const Home = () => {
     };
   }, [firstImgState]);
 
+  const categoryCarousel = useRef(null);
+  //scroll function
+const handleCarouselScroll = (value) =>{
+  categoryCarousel.current.scrollLeft += value;
+}
+
+
   return (
     <>
       <div className="fixed lg:w-full w-screen lg:h-[50px] h-[45px] flex justify-center border-b-2 border-custom-yellow bg-white z-50">
@@ -65,8 +72,8 @@ const Home = () => {
       <div className="w-full h-screen overflow-hidden">
         <img
           src={firstImgState}
-          className="w-full object-hidden "
-          alt="Cricket-Images"
+          className="w-full object-hidden"
+          alt="cricket-equipment"
         ></img>
         {
           //dynamic heading
@@ -119,10 +126,10 @@ const Home = () => {
               Category
             </h2>
             <div className="flex flex-row gap-2 mx-1">
-              <button className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2">
+              <button className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2" onClick={()=>{handleCarouselScroll(-150)}}>
                 <LeftOutlined />
               </button>
-              <button className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2">
+              <button className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2" onClick={()=>{handleCarouselScroll(150   )}}>
                 <RightOutlined />
               </button>
             </div>
@@ -130,14 +137,24 @@ const Home = () => {
               //card 2 (horizontal scroll)
             }
           </div>
-          <div className="w-3/4 overflow-x-scroll">
-          <div className="flex flex-nowrap">
-          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
-          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
-          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
-          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
-          <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
-          </div>
+          <div className="w-3/4 overflow-x-scroll hide-scroll-bar" ref={categoryCarousel}>
+            <div className="flex flex-nowrap">
+              <div className="inline-block px-1">
+                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+              </div>
+              <div className="inline-block px-1">
+                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+              </div>
+              <div className="inline-block px-1">
+                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+              </div>
+              <div className="inline-block px-1">
+                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+              </div>
+              <div className="inline-block px-1">
+                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
