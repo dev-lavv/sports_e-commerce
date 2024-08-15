@@ -73,7 +73,7 @@ const Home = () => {
         }
         <a href="#" className="">
           <h1
-            className="lg:text-[96px] text-custom-yellow bg-custom-gray rounded-full px-2 py-2 hover:bg-custom-yellow hover:text-white z-1"
+            className="hidden lg:text-[96px] text-custom-yellow bg-custom-gray rounded-full px-2 py-2 hover:bg-custom-yellow hover:text-white z-1"
             style={{
               position: "absolute",
               bottom: `${"2rem"}`,
@@ -131,7 +131,7 @@ const Home = () => {
             }
           </div>
           <div className="w-3/4 overflow-x-scroll">
-          <div className=" flex flex-nowrap">
+          <div className="flex flex-nowrap">
           <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
           <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
           <div className="inline-block px-1"><div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div></div>
