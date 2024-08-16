@@ -110,19 +110,19 @@ const handleCarouselScroll = (value) =>{
       {
         //section - 2
       }
-      <div className="w-full h-auto  flex justify-center">
-        <div className="w-5/6 h-3/4  my-10 flex">
+      <div className="w-full h-auto  flex justify-center lg:my-10">
+        <div className="w-5/6 h-3/4 flex">
           {
             //card - 1
           }
           <div className="w-1/4 h-3/4  flex flex-col gap-1">
-            <h2 className="text-[48px] font-mono font-semibold text-custom-yellow">
+            <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-yellow">
               Search
             </h2>
-            <h2 className="text-[48px] font-mono font-semibold text-custom-yellow">
+            <h2 className="lg:text-[48px] font-mono font-semibold text-custom-yellow">
               By
             </h2>
-            <h2 className="text-[48px] font-mono font-semibold text-custom-yellow">
+            <h2 className="lg:text-[48px] font-mono font-semibold text-custom-yellow">
               Category
             </h2>
             <div className="flex flex-row gap-2 mx-1">
@@ -137,7 +137,7 @@ const handleCarouselScroll = (value) =>{
               //card 2 (horizontal scroll)
             }
           </div>
-          <div className="w-3/4 overflow-x-scroll hide-scroll-bar" ref={categoryCarousel}>
+          <div className="lg:w-3/4 overflow-x-scroll hide-scroll-bar" ref={categoryCarousel}>
             <div className="flex flex-nowrap">
               <div className="inline-block px-1">
                 <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
@@ -156,6 +156,22 @@ const handleCarouselScroll = (value) =>{
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      {
+        //section 2 end
+      }
+      <div className="flex justify-center items-center">
+      <div className="w-5/6">
+      <hr className="border border-custom-gray"/>
+      </div>
+      </div>
+      {
+        //section 3
+      }
+      <div className="w-full h-auto">
+        <div className="flex flex-row gap-5">
+
         </div>
       </div>
       <Footer />
