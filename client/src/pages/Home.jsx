@@ -59,20 +59,19 @@ const Home = () => {
 
   const categoryCarousel = useRef(null);
   //scroll function
-const handleCarouselScroll = (value) =>{
-  categoryCarousel.current.scrollLeft += value;
-}
-
+  const handleCarouselScroll = (value) => {
+    categoryCarousel.current.scrollLeft += value;
+  };
 
   return (
     <>
       <div className="fixed lg:w-full w-screen lg:h-[50px] h-[45px] flex justify-center border-b-2 border-custom-yellow bg-white z-50">
         <Header home="border-b-2 border-custom-yellow " />
       </div>
-      <div className="w-full h-screen overflow-hidden">
+      <div className="w-full h-auto overflow-hidden">
         <img
           src={firstImgState}
-          className="w-full object-hidden"
+          className="w-full"
           alt="cricket-equipment"
         ></img>
         {
@@ -110,8 +109,8 @@ const handleCarouselScroll = (value) =>{
       {
         //section - 2
       }
-      <div className="w-full h-auto  flex justify-center lg:my-10">
-        <div className="w-5/6 h-3/4 flex">
+      <div className="w-full h-auto  flex justify-center my-10">
+        <div className="w-5/6 h-3/4 flex lg:flex-row flex-col gap-1">
           {
             //card - 1
           }
@@ -119,17 +118,27 @@ const handleCarouselScroll = (value) =>{
             <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-yellow">
               Search
             </h2>
-            <h2 className="lg:text-[48px] font-mono font-semibold text-custom-yellow">
+            <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-yellow">
               By
             </h2>
-            <h2 className="lg:text-[48px] font-mono font-semibold text-custom-yellow">
+            <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-yellow">
               Category
             </h2>
-            <div className="flex flex-row gap-2 mx-1">
-              <button className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2" onClick={()=>{handleCarouselScroll(-150)}}>
+            <div className="flex-row gap-2 mx-1 lg:flex hidden">
+              <button
+                className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2"
+                onClick={() => {
+                  handleCarouselScroll(-150);
+                }}
+              >
                 <LeftOutlined />
               </button>
-              <button className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2" onClick={()=>{handleCarouselScroll(150   )}}>
+              <button
+                className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2"
+                onClick={() => {
+                  handleCarouselScroll(150);
+                }}
+              >
                 <RightOutlined />
               </button>
             </div>
@@ -137,7 +146,10 @@ const handleCarouselScroll = (value) =>{
               //card 2 (horizontal scroll)
             }
           </div>
-          <div className="lg:w-3/4 overflow-x-scroll hide-scroll-bar" ref={categoryCarousel}>
+          <div
+            className="lg:w-3/4 overflow-x-scroll hide-scroll-bar"
+            ref={categoryCarousel}
+          >
             <div className="flex flex-nowrap">
               <div className="inline-block px-1">
                 <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
@@ -159,21 +171,53 @@ const handleCarouselScroll = (value) =>{
         </div>
       </div>
       {
-        //section 2 end
+        //section 2 end break code below
       }
       <div className="flex justify-center items-center">
-      <div className="w-5/6">
-      <hr className="border border-custom-gray"/>
-      </div>
+        <div className="w-5/6">
+          <hr className="border border-custom-gray" />
+        </div>
       </div>
       {
         //section 3
       }
-      <div className="w-full h-auto">
-        <div className="flex flex-row gap-5">
-
+      <div className="w-full h-auto flex justify-center items-center my-10">
+        <div className="flex flex-row justify-between w-5/6 h-[40rem]">
+          <div className="block w-[49%] border-2 border-black rounded-3xl shadow-md">
+          {
+            //image
+          }
+            <div className="flex justify-center items-center">
+              <h2 className="font-mono text-2xl font-semibold">Best Helmets</h2>
+            </div>
+            <div className="flex justify-center items-center">
+              <p className="font-mono">Buy the best helmets for all sizes.</p>
+            </div>
+          </div>
+          <div className="block w-[49%] border-2 border-black rounded-3xl shadow-md">
+          {
+            //image
+          }
+            <div className="flex justify-center items-center">
+              <h2 className="font-mono text-2xl font-semibold">Best Gloves</h2>
+            </div>
+            <div className="flex justify-center items-center">
+              <p className="font-mono">Buy the best Gloves for all sizes.</p>
+            </div>
+          </div>
         </div>
       </div>
+      {
+        //section 3 end
+      }
+      <div className="flex justify-center items-center">
+        <div className="w-5/6">
+          <hr className="border border-custom-gray" />
+        </div>
+      </div>
+      {
+        //section 4
+      }
       <Footer />
     </>
   );
