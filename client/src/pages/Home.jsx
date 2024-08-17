@@ -6,58 +6,63 @@ import image3 from "../assets/Home_image_3.jpg"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useState, useEffect, useRef } from "react";
 const Home = () => {
-  //variables
-  const imgOne = image1;
-  const imgTwo = image2;
-    
-  const imgThree = image3;
   //states/props
-  const [firstImgState, setFirstImg] = useState(imgOne);
+  const [firstImgState, setFirstImg] = useState(image1);
   const [h1TextState, setH1] = useState("balls");
+  const [slideButton, setSlideButton] = useState("text-custom-white")
   //functions
   const handleFirstLeft = () => {
-    if (firstImgState === imgThree) {
-      setFirstImg(imgTwo);
+    if (firstImgState === image3) {
+      setFirstImg(image2);
       setH1("bats");
-    } else if (firstImgState === imgTwo) {
-      setFirstImg(imgOne);
+      setSlideButton("text-custom-gray")
+    } else if (firstImgState === image2) {
+      setFirstImg(image1);
       setH1("balls");
+      setSlideButton("text-custom-white")
     } else {
-      setFirstImg(imgThree);
+      setFirstImg(image3);
       setH1("helmets");
+      setSlideButton("text-custom-white")
     }
   };
   const handleFirstRight = () => {
-    if (firstImgState === imgOne) {
-      setFirstImg(imgTwo);
+    if (firstImgState === image1) {
+      setFirstImg(image2);
       setH1("bats");
-    } else if (firstImgState === imgTwo) {
-      setFirstImg(imgThree);
+      setSlideButton("text-custom-gray")
+    } else if (firstImgState === image2) {
+      setFirstImg(image3);
       setH1("helmets");
+      setSlideButton("text-custom-white")
     } else {
-      setFirstImg(imgOne);
+      setFirstImg(image1);
       setH1("balls");
+      setSlideButton("text-custom-white")
     }
   };
-  //hooks
+  //effect hooks
   useEffect(() => {
     let timer1 = setTimeout(() => {
-      if (firstImgState === imgOne) {
-        setFirstImg(imgTwo);
+      if (firstImgState === image1) {
+        setFirstImg(image2);
         setH1("bats");
-      } else if (firstImgState === imgTwo) {
-        setFirstImg(imgThree);
+        setSlideButton("text-custom-gray")
+      } else if (firstImgState === image2) {
+        setFirstImg(image3);
         setH1("helmets");
-      } else if (firstImgState === imgThree) {
-        setFirstImg(imgOne);
+        setSlideButton("text-custom-white")
+      } else if (firstImgState === image3) {
+        setFirstImg(image1);
         setH1("balls");
+        setSlideButton("text-custom-white")
       }
     }, 3000);
     return () => {
       clearTimeout(timer1);
     };
-  }, [firstImgState]);
-
+  }, [firstImgState])
+  //referance hooks
   const categoryCarousel = useRef(null);
   //scroll function
   const handleCarouselScroll = (value) => {
@@ -92,7 +97,7 @@ const Home = () => {
         </a>
         <div className="absolute top-1/2">
           <button
-            className="z-50 w-8 h-8 rounded-lg hover:bg-custom-yellow text-white"
+            className={`z-50 w-8 h-8 rounded-lg hover:bg-custom-yellow ${slideButton}`}
             onClick={handleFirstLeft}
           >
             <LeftOutlined />
@@ -100,7 +105,7 @@ const Home = () => {
         </div>
         <div className="absolute top-1/2 right-0">
           <button
-            className="w-8 h-8 rounded-lg hover:bg-custom-yellow text-white"
+            className={`w-8 h-8 rounded-lg hover:bg-custom-yellow ${slideButton}`}
             onClick={handleFirstRight}
           >
             <RightOutlined />

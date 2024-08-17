@@ -13,6 +13,7 @@
     "@ant-design/icons": "^5.3.7",
     "antd": "^5.17.4",
     "axios": "^1.7.2",
+    "country-flags-svg": "^2.0.0-beta.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",
