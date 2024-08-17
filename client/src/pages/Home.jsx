@@ -65,8 +65,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="fixed lg:w-full w-screen lg:h-[50px] h-[45px] flex justify-center border-b-2 border-custom-yellow bg-white z-50">
-        <Header home="border-b-2 border-custom-yellow " />
+      <div className="fixed lg:w-full w-screen lg:h-[50px] h-[45px] flex justify-center border-b-2 border-custom-gray bg-white z-50">
+        <Header home="border-b-2 border-custom-gray" />
       </div>
       <div className="w-full h-auto overflow-hidden">
         <img
