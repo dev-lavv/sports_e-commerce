@@ -115,18 +115,18 @@ const Home = () => {
             //card - 1
           }
           <div className="w-1/4 h-3/4  flex flex-col gap-1">
-            <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-yellow">
+            <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-gray hover:text-custom-yellow">
               Search
             </h2>
-            <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-yellow">
+            <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-gray hover:text-custom-yellow">
               By
             </h2>
-            <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-yellow">
+            <h2 className="lg:text-[48px] text-[12px] font-mono font-semibold text-custom-gray hover:text-custom-yellow">
               Category
             </h2>
             <div className="flex-row gap-2 mx-1 lg:flex hidden">
               <button
-                className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2"
+                className="border border-custom-gray rounded-full text-custom-gray hover:bg-custom-yellow hover:text-custom-white py-1 px-2 hover:border-custom-yellow"
                 onClick={() => {
                   handleCarouselScroll(-150);
                 }}
@@ -134,7 +134,7 @@ const Home = () => {
                 <LeftOutlined />
               </button>
               <button
-                className="border border-custom-yellow rounded-full text-custom-yellow hover:bg-custom-yellow hover:text-custom-white py-1 px-2"
+                className="border border-custom-gray rounded-full text-custom-gray hover:bg-custom-yellow hover:text-custom-white py-1 px-2 hover:border-custom-yellow"
                 onClick={() => {
                   handleCarouselScroll(150);
                 }}
@@ -151,20 +151,20 @@ const Home = () => {
             ref={categoryCarousel}
           >
             <div className="flex flex-nowrap">
-              <div className="inline-block px-1">
-                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+              <div className="inline-block px-1 ">
+                <div className="w-[250px] h-[366px] bg-custom-gray hover:bg-custom-yellow cursor-pointer rounded-lg"></div>
               </div>
               <div className="inline-block px-1">
-                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+                <div className="w-[250px] h-[366px] bg-custom-gray hover:bg-custom-yellow cursor-pointer rounded-lg"></div>
               </div>
               <div className="inline-block px-1">
-                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+                <div className="w-[250px] h-[366px] bg-custom-gray hover:bg-custom-yellow cursor-pointer rounded-lg"></div>
               </div>
               <div className="inline-block px-1">
-                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+                <div className="w-[250px] h-[366px] bg-custom-gray hover:bg-custom-yellow cursor-pointer rounded-lg"></div>
               </div>
               <div className="inline-block px-1">
-                <div className="w-[250px] h-[366px] bg-custom-yellow rounded-lg"></div>
+                <div className="w-[250px] h-[366px] bg-custom-gray hover:bg-custom-yellow cursor-pointer rounded-lg"></div>
               </div>
             </div>
           </div>
@@ -183,25 +183,25 @@ const Home = () => {
       }
       <div className="w-full h-auto flex justify-center items-center my-10">
         <div className="flex flex-row justify-between w-5/6 h-[40rem]">
-          <div className="block w-[49%] border-2 border-black rounded-3xl shadow-md">
+          <div className="block w-[49%] border-2 border-custom-gray hover:border-custom-yellow cursor-pointer rounded-3xl shadow-xl">
           {
             //image
           }
             <div className="flex justify-center items-center">
-              <h2 className="font-mono text-2xl font-semibold">Best Helmets</h2>
+              <h2 className="font-mono text-2xl font-semibold text-custom-gray hover:text-custom-yellow">Best Helmets</h2>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center text-custom-gray hover:text-custom-yellow">
               <p className="font-mono">Buy the best helmets for all sizes.</p>
             </div>
           </div>
-          <div className="block w-[49%] border-2 border-black rounded-3xl shadow-md">
+          <div className="block w-[49%] border-2 border-custom-gray hover:border-custom-yellow cursor-pointer rounded-3xl shadow-xl">
           {
             //image
           }
             <div className="flex justify-center items-center">
-              <h2 className="font-mono text-2xl font-semibold">Best Gloves</h2>
+              <h2 className="font-mono text-2xl font-semibold text-custom-gray hover:text-custom-yellow">Best Gloves</h2>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center text-custom-gray hover:text-custom-yellow">
               <p className="font-mono">Buy the best Gloves for all sizes.</p>
             </div>
           </div>

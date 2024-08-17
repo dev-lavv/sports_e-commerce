@@ -21,10 +21,10 @@ const Header = (props) => {
       <nav className="w-5/6 h-[50px]">
         <div className="lg:flex hidden justify-between items-center h-[50px]">
           <div>
-            <h1 className="text-[24px] text-custom-gray">Sports e<span className="text-custom-yellow">C</span>om</h1>
+            <h1 className="text-[24px] text-custom-gray hover:text-custom-yellow">Sports e<span className="text-custom-yellow">C</span>om</h1>
           </div>
-          <div className="lg:flex hidden justify-between items-center border-2 border-black rounded-l-xl rounded-r-xl">
-            <input className="mx-1 outline-none" />
+          <div className="lg:flex hidden justify-between items-center border-2 border-custom-gray rounded-2xl">
+            <input className="mx-1 outline-none"/>
             <button>
               <SearchOutlined className="text-[24px] bg-custom-gray text-custom-white hover:bg-custom-yellow rounded-r-xl py-1 px-1" />
             </button>

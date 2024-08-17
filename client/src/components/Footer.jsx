@@ -2,115 +2,115 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-custom-yellow">
+      <footer className="bg-custom-gray">
         <div className="mx-auto max-w-screen-xl lg:w-full ">
           <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
             <div>
-              <h2 className="mb-6 text-sm  uppercase text-custom-dark-blue font-bold font-mono">
+              <h2 className="mb-6 text-sm  uppercase text-custom-yellow font-bold font-mono">
                 Company
               </h2>
               <ul className="text-custom-white font-mono">
                 <li className="mb-4">
-                  <a href="#" className=" hover:underline">
+                  <a href="#" className=" hover:underline hover:text-custom-yellow hover:text-custom-yellow">
                     About
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow hover:text-custom-yellow">
                     Careers
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow hover:text-custom-yellow">
                     Brand Center
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow hover:text-custom-yellow">
                     Blog
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-bold text-custom-dark-blue uppercase font-mono">
+              <h2 className="mb-6 text-sm font-bold text-custom-yellow uppercase font-mono">
                 Help center
               </h2>
               <ul className="text-custom-white font-medium font-mono">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     Discord Server
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     Twitter
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     Facebook
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     Contact Us
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-bold text-custom-dark-blue uppercase font-mono">
+              <h2 className="mb-6 text-sm font-bold text-custom-yellow uppercase font-mono">
                 Legal
               </h2>
               <ul className="text-custom-white font-medium font-mono">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     Privacy Policy
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     Licensing
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     Terms &amp; Conditions
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-bold text-custom-dark-blue uppercase font-mono">
+              <h2 className="mb-6 text-sm font-bold text-custom-yellow uppercase font-mono">
                 Download
               </h2>
               <ul className="text-custom-white font-medium font-mono">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     iOS
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     Android
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     Windows
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline hover:text-custom-yellow">
                     MacOS
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="px-4 py-6 bg-custom-yellow md:flex md:items-center md:justify-between">
-            <span className="text-sm text-custom-white sm:text-center font-mono">
+          <div className="px-4 py-6 bg-custom-gray md:flex md:items-center md:justify-between">
+            <span className="text-sm text-custom-white sm:text-center font-mono hover:text-custom-yellow">
               © 2023 <a href="">Sports-eCom</a>. All Rights
               Reserved.
             </span>
@@ -120,7 +120,7 @@ const Footer = () => {
                 className="text-custom-white dark:hover:text-white"
               >
                 <svg
-                  className="w-4 h-4"
+                  className="w-4 h-4 hover:text-custom-yellow"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -139,7 +139,7 @@ const Footer = () => {
                 className="text-custom-white dark:hover:text-white"
               >
                 <svg
-                  className="w-4 h-4"
+                  className="w-4 h-4 hover:text-custom-yellow"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -154,7 +154,7 @@ const Footer = () => {
                 className="text-custom-white dark:hover:text-white"
               >
                 <svg
-                  className="w-4 h-4"
+                  className="w-4 h-4 hover:text-custom-yellow"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -173,7 +173,7 @@ const Footer = () => {
                 className="text-custom-white dark:hover:text-white"
               >
                 <svg
-                  className="w-4 h-4"
+                  className="w-4 h-4 hover:text-custom-yellow"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -192,7 +192,7 @@ const Footer = () => {
                 className="text-custom-white dark:hover:text-white"
               >
                 <svg
-                  className="w-4 h-4"
+                  className="w-4 h-4 hover:text-custom-yellow"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
