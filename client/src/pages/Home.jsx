@@ -1,15 +1,16 @@
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import image1 from "../assets/Home_image_1.jpeg"
+import image2 from "../assets/Home_image_2.webp"
+import image3 from "../assets/Home_image_3.jpg"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useState, useEffect, useRef } from "react";
 const Home = () => {
   //variables
-  const imgOne =
-    "https://dkpcricketonline.com/cdn/shop/files/DKP_Range_Sqaure_1_3024x.jpg?v=1706124419";
-  const imgTwo =
-    "https://dkpcricketonline.com/cdn/shop/files/thumbnail_IMG_0046_1296x.jpg?v=1694374322";
-  const imgThree =
-    "https://www.gray-nicolls.co.uk/cdn/shop/files/GettyImages-1964812307.jpg?v=1720794694&width=1800";
+  const imgOne = image1;
+  const imgTwo = image2;
+    
+  const imgThree = image3;
   //states/props
   const [firstImgState, setFirstImg] = useState(imgOne);
   const [h1TextState, setH1] = useState("balls");
