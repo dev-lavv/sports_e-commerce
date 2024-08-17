@@ -1,44 +1,44 @@
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
-import image1 from "../assets/Home_image_1.jpeg"
-import image2 from "../assets/Home_image_2.webp"
-import image3 from "../assets/Home_image_3.jpg"
+import image1 from "../assets/Home_image_1.jpeg";
+import image2 from "../assets/Home_image_2.webp";
+import image3 from "../assets/Home_image_3.jpg";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useState, useEffect, useRef } from "react";
 const Home = () => {
   //states/props
   const [firstImgState, setFirstImg] = useState(image1);
   const [h1TextState, setH1] = useState("balls");
-  const [slideButton, setSlideButton] = useState("text-custom-white")
+  const [slideButton, setSlideButton] = useState("text-custom-white");
   //functions
   const handleFirstLeft = () => {
     if (firstImgState === image3) {
       setFirstImg(image2);
       setH1("bats");
-      setSlideButton("text-custom-gray")
+      setSlideButton("text-custom-gray");
     } else if (firstImgState === image2) {
       setFirstImg(image1);
       setH1("balls");
-      setSlideButton("text-custom-white")
+      setSlideButton("text-custom-white");
     } else {
       setFirstImg(image3);
       setH1("helmets");
-      setSlideButton("text-custom-white")
+      setSlideButton("text-custom-white");
     }
   };
   const handleFirstRight = () => {
     if (firstImgState === image1) {
       setFirstImg(image2);
       setH1("bats");
-      setSlideButton("text-custom-gray")
+      setSlideButton("text-custom-gray");
     } else if (firstImgState === image2) {
       setFirstImg(image3);
       setH1("helmets");
-      setSlideButton("text-custom-white")
+      setSlideButton("text-custom-white");
     } else {
       setFirstImg(image1);
       setH1("balls");
-      setSlideButton("text-custom-white")
+      setSlideButton("text-custom-white");
     }
   };
   //effect hooks
@@ -47,21 +47,21 @@ const Home = () => {
       if (firstImgState === image1) {
         setFirstImg(image2);
         setH1("bats");
-        setSlideButton("text-custom-gray")
+        setSlideButton("text-custom-gray");
       } else if (firstImgState === image2) {
         setFirstImg(image3);
         setH1("helmets");
-        setSlideButton("text-custom-white")
+        setSlideButton("text-custom-white");
       } else if (firstImgState === image3) {
         setFirstImg(image1);
         setH1("balls");
-        setSlideButton("text-custom-white")
+        setSlideButton("text-custom-white");
       }
     }, 3000);
     return () => {
       clearTimeout(timer1);
     };
-  }, [firstImgState])
+  }, [firstImgState]);
   //referance hooks
   const categoryCarousel = useRef(null);
   //scroll function
@@ -115,7 +115,7 @@ const Home = () => {
       {
         //beak
       }
-            <div className="flex justify-center items-center mt-10">
+      <div className="flex justify-center items-center mt-10">
         <div className="w-5/6">
           <hr className="border border-custom-gray" />
         </div>
@@ -198,22 +198,26 @@ const Home = () => {
       <div className="w-full h-auto flex justify-center items-center my-10">
         <div className="flex flex-row justify-between w-5/6 h-[40rem]">
           <div className="block w-[49%] border-2 border-custom-gray hover:border-custom-yellow cursor-pointer rounded-3xl shadow-xl">
-          {
-            //image
-          }
+            {
+              //image
+            }
             <div className="flex justify-center items-center">
-              <h2 className="font-mono text-2xl font-semibold text-custom-gray hover:text-custom-yellow">Best Helmets</h2>
+              <h2 className="font-mono text-2xl font-semibold text-custom-gray hover:text-custom-yellow">
+                Best Helmets
+              </h2>
             </div>
             <div className="flex justify-center items-center text-custom-gray hover:text-custom-yellow">
               <p className="font-mono">Buy the best helmets for all sizes.</p>
             </div>
           </div>
           <div className="block w-[49%] border-2 border-custom-gray hover:border-custom-yellow cursor-pointer rounded-3xl shadow-xl">
-          {
-            //image
-          }
+            {
+              //image
+            }
             <div className="flex justify-center items-center">
-              <h2 className="font-mono text-2xl font-semibold text-custom-gray hover:text-custom-yellow">Best Gloves</h2>
+              <h2 className="font-mono text-2xl font-semibold text-custom-gray hover:text-custom-yellow">
+                Best Gloves
+              </h2>
             </div>
             <div className="flex justify-center items-center text-custom-gray hover:text-custom-yellow">
               <p className="font-mono">Buy the best Gloves for all sizes.</p>
