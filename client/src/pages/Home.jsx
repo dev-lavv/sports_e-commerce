@@ -238,17 +238,20 @@ const Home = () => {
       }
       <div className="w-full h-auto flex justify-center items-center mt-10 bg-custom-green">
         <div className="w-5/6 h-auto">
-        <h2 className="font-mono text-[48px] text-custom-white hover:text-custom-yellow text-center mb-[10rem]">Subscribe to our newsletter:</h2>
-        <br className/>
-        <div className="flex justify-between mb-10">
-          <div></div>
-        <div className="flex gap-1">
-        <p className="text-custom-white hover:text-custom-yellow font-mono">Email:</p>
-        <input className="border-2 border-custom-gray bg-custom-green rounded-lg text-custom-white hover:text-custom-yellow"></input>
+          <h2 className="font-mono text-[48px] text-custom-white hover:text-custom-yellow text-center mb-[10rem]">
+            Subscribe to our newsletter:
+          </h2>
+          <br className />
+          <div className="flex justify-between mb-10">
+            <div></div>
+            <div className="flex gap-1">
+              <p className="text-custom-white hover:text-custom-yellow font-mono">
+                Email:
+              </p>
+              <input className="border-2 border-custom-gray bg-custom-green rounded-lg text-custom-white hover:text-custom-yellow"></input>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-
       </div>
       <Footer />
     </>
